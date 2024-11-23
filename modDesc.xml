@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="92">
+	<author>johnwayne1930</author>
+	<version>1.0.0.0</version>
+	
+	<title>
+		<en>Lizard MKS 8 Plus</en>
+	</title>
+	
+	<description>
+		<en><![CDATA[Lizard MKS 8 Plus
+ 
+Price: 25.000 $
+Fillvolume: 8000 L
+Filltype: Milk, Water, Liquid Fertilizer, Herbicide
+Configurations: base color, rim color, trailer hitch, beacon light
+]]></en>
+		<de><![CDATA[Lizard MKS 8 Plus
+
+Preis: 25.000 €
+Füllvolumen: 8000 L
+Fülltyp: Milch, Wasser, Flüssigdünger, Herbizid
+Konfigurationen: Grundfarben, Felgenfarben, Anhängerkupplung, Rundumleuchte 
+]]></de>
+	</description>
+	
+	<iconFilename>icon_mks8.dds</iconFilename>
+	<multiplayer supported="true"/>
+	
+	 <storeItems>
+		<storeItem xmlFilename="mks8.xml"/>
+	</storeItems>
+</modDesc>
