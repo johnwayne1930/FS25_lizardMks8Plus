@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="92">
+<modDesc descVersion="94">
 	<author>johnwayne1930</author>
 	<version>1.0.0.0</version>
 	
@@ -8,19 +8,21 @@
 	</title>
 	
 	<description>
-		<en><![CDATA[Lizard MKS 8 Plus
- 
+<en><![CDATA[Lizard MKS 8 Plus
+
 Price: 25.000 $
 Fillvolume: 8000 L
 Filltype: Milk, Water, Liquid Fertilizer, Herbicide
 Configurations: base color, rim color, trailer hitch, beacon light
+Category: Barrels
 ]]></en>
-		<de><![CDATA[Lizard MKS 8 Plus
+<de><![CDATA[Lizard MKS 8 Plus
 
 Preis: 25.000 €
 Füllvolumen: 8000 L
 Fülltyp: Milch, Wasser, Flüssigdünger, Herbizid
-Konfigurationen: Grundfarben, Felgenfarben, Anhängerkupplung, Rundumleuchte 
+Konfigurationen: Grundfarben, Felgenfarben, Anhängerkupplung, Rundumleuchte
+Shopkategorie: Transportfässer
 ]]></de>
 	</description>
 	

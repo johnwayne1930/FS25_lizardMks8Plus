@@ -15,12 +15,6 @@
         <category>barrels</category>
         <shopTranslationOffset>0 -0.077 0</shopTranslationOffset>
         <shopRotationOffset>0.045 0 0</shopRotationOffset>
-        <vertexBufferMemoryUsage>805376</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>218880</indexBufferMemoryUsage>
-        <textureMemoryUsage>393216</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
@@ -40,11 +34,9 @@
     </base>
 
     <designConfigurations title="$l10n_configuration_beacon" isYesNoOption="true">
-        <designConfiguration name="$l10n_configuration_valueNo" price="0">
-            <objectChange node="beaconLights" visibilityActive="false"/>
-        </designConfiguration>
+        <designConfiguration name="$l10n_configuration_valueNo" price="0" />
         <designConfiguration name="$l10n_configuration_valueYes" price="500">
-            <objectChange node="beaconLights" visibilityActive="true"/>
+            <objectChange node="beaconLights" visibilityActive="true" visibilityInactive="false"/>
         </designConfiguration>
     </designConfigurations>
 
@@ -80,11 +72,13 @@
     </attachable>
 
     <attacherJoints>
-        <attacherJointConfigurations>
-            <attacherJointConfiguration>				
+        <attacherJointConfigurations title="$l10n_configuration_trailerHitch" isYesNoOption="true">
+           <attacherJointConfiguration name="$l10n_configuration_valueNo" connectionHoseConfigId="2" />				
+           <attacherJointConfiguration name="$l10n_configuration_valueYes" connectionHoseConfigId="1" price="1000">
 				<attacherJoint node="trailerAttacherJointBack" jointType="trailer" lowerRotLimit="25 50 67" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false" >
 					<schema position="1 0" rotation="0" invertX="false" />
 				</attacherJoint>
+                <objectChange node="trailerAttacherNode" visibilityActive="true" visibilityInactive="false"/>
 				<sounds>
 					<attach template="ATTACH_01" linkNode="0>" />
 				</sounds>
@@ -150,9 +144,15 @@
             <disconnect type="airDoubleRed" template="hydraulicHosesDetach" volumeScale="0.7" linkNode="attacherJoint"/>
             <disconnect type="electric"     template="generalConnection"    volumeScale="0.7" linkNode="attacherJoint"/>
         </sounds>
-		<target attacherJointIndices="1" type="electric" node="electricBack" socket="electric"/>
-        <target attacherJointIndices="1" type="airDoubleYellow" node="airDoubleYellowBack" socket="air_yellow"/>
-        <target attacherJointIndices="1" type="airDoubleRed" node="airDoubleRedBack" socket="air_red"/>
+        
+		<connectionHoseConfigurations>
+            <connectionHoseConfiguration>
+				<target attacherJointIndices="1" type="electric" node="electricBack" socket="electric"/>
+				<target attacherJointIndices="1" type="airDoubleYellow" node="airDoubleYellowBack" socket="air_yellow"/>
+				<target attacherJointIndices="1" type="airDoubleRed" node="airDoubleRedBack" socket="air_red"/>
+            </connectionHoseConfiguration>
+            <connectionHoseConfiguration />
+        </connectionHoseConfigurations>
     </connectionHoses>
 
     <animations>
@@ -275,6 +275,7 @@
         <i3dMapping id="drawbar_vis" node="2>2" />
         <i3dMapping id="attacherJoint" node="2>2|0" />
         <i3dMapping id="springRef" node="2>2|1" />
+        <i3dMapping id="trailerAttacherNode" node="0>0|6|0" />
         <i3dMapping id="trailerAttacherJointBack" node="0>0|6|0|0" />
         <i3dMapping id="electricBack" node="0>0|6|1" />
         <i3dMapping id="airDoubleRedBack" node="0>0|6|2" />     
