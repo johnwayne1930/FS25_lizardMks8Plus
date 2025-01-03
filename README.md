@@ -6,7 +6,7 @@ This mod adds the Lizard MKS 8 with additional trailer hitch, optional beacon li
 
 #### Installation manually:
 * download [Latest release](https://github.com/johnwayne1930/FS25_lizardMks8Plus/releases/latest)
-* ![GitHub all releases](https://img.shields.io/github/downloads/johnwayne1930/FS25_lizardMks8Plus/total?label=Downloads&style=plastic) 
+![GitHub all releases](https://img.shields.io/github/downloads/johnwayne1930/FS25_lizardMks8Plus/total?label=Downloads&style=plastic) 
 * put the ZIP file "FS25_lizardMks8Plus.zip" in the  
 _%\Documents\My Games\FarmingSimulator2025\mods_ directory
 * activate the mod ingame
